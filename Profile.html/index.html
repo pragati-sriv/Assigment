@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Profile Card</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="profile-card">
+    <div class="card-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQ6xalcUqiwlcrMkGuc7NJW6txojdE57QMw&s" alt="Profile Picture">
+      <h2>Pragati Srivastava</h2>
+      <p>Software Developer 🚀</p>
+      <button class="follow-btn" onclick="toggleFollow()">Follow</button>
+    </div>
+
+    <div class="bio">
+      <p>Passionate about crafting modern web experiences and responsive designs.</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <script>
+    function toggleFollow() {
+      const btn = document.querySelector('.follow-btn');
+      btn.innerText = btn.innerText === 'Follow' ? 'Following' : 'Follow';
+      btn.classList.toggle('following');
+    }
+  </script>
+</body>
+
+</html>
