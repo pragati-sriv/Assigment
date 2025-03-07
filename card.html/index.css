@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  overflow: hidden;
+}
+
+.profile-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  border-bottom: 5px solid #6a11cb;
+}
+
+.card-header img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 6px solid white;
+  transition: transform 0.3s ease;
+}
+
+.card-header img:hover {
+  transform: scale(1.1);
+}
+
+.card-header h2 {
+  margin: 15px 0 10px;
+  font-size: 28px;
+}
+
+.card-header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.follow-btn {
+  padding: 12px 25px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #ff6347;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.follow-btn.following {
+  background: #4caf50;
+}
+
+.bio {
+  padding: 25px;
+  font-size: 16px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social-icons a {
+  margin: 0 12px;
+  color: #4e54c8;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.4) rotate(360deg);
+  color: #ff6347;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    border-radius: 15px;
+  }
+
+  .card-header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-icons a {
+    font-size: 22px;
+  }
+}
